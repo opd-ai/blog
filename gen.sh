@@ -9,5 +9,4 @@ for file in $files; do
     htmlFile=$(echo $file | sed 's|.html|md|g')
     pandoc "$file" > "$htmlFile"
     echo "[$file]($file)"
-    echo "[$file]($file)"
 done
